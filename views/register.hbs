@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="register.css">
+    <title>Document</title>
+    <script>
+        function checkForm() {
+            let inputID = document.getElementById('txtuserID').value;
+            if (inputID.trim().length == 0) {
+                alert("ID can not be empty !!!");
+                document.getElementById("lblNameError").innerText = "ID can not be empty";
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <div id="form-register">
+            <form action="/doRegister" method="post" onsubmit="return checkForm()">
+                <h2>Register account</h2>
+                <div class="InputWithIcon">
+                    <input type="text" name="userID" placeholder="Enter your ID" id="txtuserID">
+                    <label id="lblNameError" style="text-align: center; color: red">{{model.errorMsg}}</label>
+                </div>
+                <div class="InputWithIcon">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <input type="text" name="username" placeholder="Enter username" id="txtusername">
+                </div>
+                <div class="InputWithIcon">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                    <input type="password" name="pass" placeholder="Enter password" id="txtpassword">
+                </div>
+                <input type="submit" name="Register" id="btn-register" value="submit">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

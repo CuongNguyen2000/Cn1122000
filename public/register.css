@@ -1,0 +1,68 @@
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Trebuchet MS";
+}
+#form-register {
+  padding: 50px 10px;
+  width: 400px;
+  min-height: 100px;
+  background-color: aquamarine;
+  margin: 0px auto;
+  margin-top: 80px;
+  border-radius: 30px;
+}
+h2 {
+  font-family: "Trebuchet MS";
+  text-align: center;
+}
+#form-register #txtusername,
+#form-register #txtpassword,
+#form-register #txtuserID {
+  display: block;
+  width: 80%;
+  padding: 10px;
+  margin: 0px auto;
+  margin-top: 15px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+#txtusername:focus,
+#txtpassword:focus,
+#txtuserID:focus {
+  border-color: dodgerBlue;
+  box-shadow: 0 0 8px 0 dodgerBlue;
+}
+.InputWithIcon input[type="text, password"] {
+  padding-left: 40px;
+}
+.InputWithIcon {
+  position: relative;
+}
+
+.InputWithIcon i {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  padding: 9px 8px;
+  color: #aaa;
+  transition: 0.3s;
+}
+
+#form-register #btn-register {
+  background: #4eab49;
+  color: white;
+  border: 0px;
+  padding: 10px 30px;
+  display: block;
+  margin: 0px auto;
+  margin-top: 15px;
+  width: 86%;
+  transition: all 0.5s;
+  border-radius: 10px;
+}
+#form-register #btn-register:hover,
+#btn-register:active {
+  background: #3aa9cd;
+  cursor: pointer;
+}

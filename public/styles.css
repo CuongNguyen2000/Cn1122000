@@ -1,0 +1,7 @@
+body {
+  font-family: "Trebuchet MS";
+}
+.blueText {
+  color: blueviolet;
+  text-transform: capitalize;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>All Users</title>
+</head>
+
+<body>
+    <h1>View All Users</h1>
+    <table border="1" class="table table-hover">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Password</th>
+            </tr>
+        </thead>
+        {{#each model}}
+        <tr>
+            <td>{{userID}}</td>
+            <td>{{name}}</td>
+            <td>{{pass}}</td>
+        </tr>
+        {{/each}}
+    </table>
+</body>
+
+</html>
